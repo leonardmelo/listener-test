@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Teste para recebimento de requisições')
 })
 
 app.post('/update/payment', (req, res) =>{
