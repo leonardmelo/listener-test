@@ -9,8 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/update/payment', (req, res) =>{
-  console.log(req.body)
-  console.log(req.body.data.paymentMethods)
+  console.log(JSON.stringify(req.body))
   res.send("Ok")
 })
 
